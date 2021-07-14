@@ -1,0 +1,14 @@
+server:
+  port: 4040
+spring:
+  datasource:
+    password: hr
+    url: jdbc:oracle:thin:@//localhost:1521/XEPDB1
+    username: hr
+    
+  jpa:
+      hibernate:
+         ddl-auto : update
+         naming:
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      show-sql: true
